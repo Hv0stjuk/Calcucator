@@ -4,8 +4,42 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Calculator</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Piazzolla:wght@900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
 </head>
 <body>
-  
+  <div class="wrapper">
+    <div class="calculator">
+      <input  id="display" class="input" disabled type="text" value="0">
+      <div class="buttons">
+        <div class="buttons__list">
+          <button class="button clear" id="ce">CE</button>
+          <button class="button clear" id="c">C</button>
+          <button class="button" id="percent">%</button>
+          <button class="button color operation">*</button>
+          <button class="button number">7</button>
+          <button class="button number">8</button>
+          <button class="button number">9</button>
+          <button class="button color operation">-</button>
+          <button class="button number">4</button>
+          <button class="button number">5</button>
+          <button class="button number">6</button>
+          <button class="button color operation">+</button>
+          <button class="button number">1</button>
+          <button class="button number">2</button>
+          <button class="button number">3</button>
+          <button class="button color operation">/</button>
+          <button class="button number">0</button>
+          <button class="button" id="decimal">.</button>
+          <button class="button" id="plusminus">±</button>
+          <button class="button color operation">=</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="main.js"></script>
 </body>
 </html>
