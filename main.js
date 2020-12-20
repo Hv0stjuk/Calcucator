@@ -12,7 +12,6 @@ let MemoryPendingOperation = '';
 numberBtn.forEach((element) => {
   element.addEventListener('click', (e) => {
     numberPress(e.target.innerText);
-    console.log(e);
   });
 });
 
@@ -31,11 +30,11 @@ clearBtn.forEach((element) => {
 });
 
 percentBtn.addEventListener('click', (e) => {
-  console.log('клик по percent');
+  
 });
 
 plusminusBtn.addEventListener('click', (e) => {
-  console.log('клик по plusminus');
+  plusminus(display.value[0]);
 });
 
 
@@ -78,11 +77,32 @@ function operation(op) {
 };
 
 function decimal() {
-  console.log('клик по точке');
+  let localDecimalMemory = display.value;
+  if (MemoryNewNumber) {
+    localDecimalMemory ='0.';
+    MemoryNewNumber = false;
+  } else {
+    if (localDecimalMemory.indexOf('.') === -1) {
+      localDecimalMemory += '.'
+    };
+  };
+  display.value = localDecimalMemory;
 };
 
 function clear(id) {
-    console.log('клик по кнопке ' + id);
+    if (id === 'ce') {
+      display.value = '0';
+      MemoryNewNumber = true;
+    } else
+    if (id === 'c') {
+      display.value = '0';
+      MemoryNewNumber = true;
+      MemoryCurrentNumber = 0;
+      MemoryPendingOperation = 0;
+    };
 };
 
 
+function plusminus(symbol) {
+
+}
