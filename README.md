@@ -1,1 +1,1 @@
-https://hv0stjuk.github.io/Calculator
+https://hv0stjuk.github.io/Calcucator
