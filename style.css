@@ -4,13 +4,31 @@
 }
 
 .wrapper {
+  display: flex;
   
+}
+
+.engineering-button {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 100px;
+  background:  rgb(255, 166, 0.9);
+  border-radius: 5px;
+  transition: all 0.5 ease;
+}
+
+.engineering-button:hover {
+  background:  rgb(236, 164, 30);
+
 }
 
 .calculator {
   background-color: rgba(0, 0, 0, 0.5);
   margin: auto;
-  height: 600px;
+  height: 550px;
   width: 400px;
   border: 3px solid black;
   display: flex;
@@ -23,11 +41,14 @@
   font-family: 'Share Tech Mono', monospace;
   color: black;
   font-size: 40px;
-  height: 70px;
+  height: 50px;
   width: 320px;
   margin: auto;
   border: 2px solid white;
   border-radius: 5px;
+}
+.action {
+  padding-left: 35px;
 }
 
 .buttons {
@@ -45,6 +66,10 @@
   align-content: space-between;
 }
 
+.engineering--hiden {
+  display: none;
+}
+
 .button {
   border-radius: 5px;
   cursor: pointer;
@@ -57,6 +82,11 @@
   border: 0;
  
 }
+
+.button--small {
+  height: 61px;
+}
+
 
 .button:focus {
   outline: none;

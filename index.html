@@ -12,10 +12,20 @@
 </head>
 <body>
   <div class="wrapper">
+    <div class="engineering-button" id="engineering">
+      <p>
+        Инжинерный
+      </p>
+    </div>
     <div class="calculator">
       <input  id="display" class="input" disabled type="text" value="0">
+      <div><span id="actions" class="action"></span></div>
       <div class="buttons">
         <div class="buttons__list">
+          <button id="backspace" class="button engineering--hiden">&#129040;</button>
+          <button id="module" class="button engineering--hiden special">||</button>
+          <button id="sqrt" class="button engineering--hiden special">√</button>
+          <button id="exp" class="button engineering--hiden special">X²</button>
           <button class="button clear" id="ce">CE</button>
           <button class="button clear" id="c">C</button>
           <button class="button" id="percent">%</button>
